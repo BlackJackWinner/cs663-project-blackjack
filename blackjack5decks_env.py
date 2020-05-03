@@ -47,7 +47,7 @@ def is_natural(hand):  # Is this hand a natural blackjack?
     return sorted(hand) == [1, 10]
 
 
-class Blackjack3DecksEnv(gym.Env):
+class Blackjack5DecksEnv(gym.Env):
     def __init__(self, ply_deck=False, dl_deck=False, game_round=False, has_df=False, natural=False):
         self.action_space = spaces.Discrete(2)
         self.observation_space = spaces.Tuple((
